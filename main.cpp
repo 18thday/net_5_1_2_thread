@@ -12,8 +12,8 @@ void add_two_vectors(std::vector<int>& res, const std::vector<int>& lhs, const s
 void VectorSumTest(size_t element_count, size_t thread_count) {
     std::vector<int> v1(element_count);
     std::vector<int> v2(element_count);
-    std::vector<int> res;
-    res.reserve(element_count);
+    std::vector<int> res(element_count);
+//    res.reserve(element_count);
 
     std::vector<std::thread> th_vec;
     th_vec.reserve(thread_count);
